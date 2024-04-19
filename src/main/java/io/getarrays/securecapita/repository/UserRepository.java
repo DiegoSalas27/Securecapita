@@ -6,7 +6,7 @@ import java.util.Collection;
 
 public interface UserRepository<T extends User>   {
     /* Basic CRUD Operations */
-    T Create(T data);
+    T create(T data);
     Collection<T> list(int page, int pageSize);
     T get(Long id);
     T update(T data);
